@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--配置数据源，交给Spring去做-->
+
+    <!-- log output -->
+    <settings>
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
+
+    <typeAliases>
+        <package name="com.allen.pojo"/>
+    </typeAliases>
+
+    <!--将接口绑定到配置文件中-->
+    <mappers>
+        <mapper class="com.allen.dao.BookMapper"/>
+    </mappers>
+</configuration>
